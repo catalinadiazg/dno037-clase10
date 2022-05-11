@@ -48,7 +48,7 @@
 
                     var n = new URLSearchParams(window.location.search).get('nro');
                     if (n !== null) {
-                        document.querySelector('section').innerHTML = '<h1>' + peliculas[n].name + '</h1><h4>' + peliculas[n].director + ' (' + peliculas[n].year + ')</h4><img src="images/' + peliculas[n].pic_lg + '"><p>' + peliculas[n].description + '</p><h3>Trailer</h3><p>Puedes el trailer de esta pelicula en <a href="' + peliculas[n].trailer + '" target="_blank">Youtube</a><p>';
+                        document.querySelector('section').innerHTML = '<h1>' + peliculas[n].name + '</h1><h4>' + peliculas[n].director + ' (' + peliculas[n].year + ')</h4><img class="w-100" src="images/' + peliculas[n].pic_lg + '"><p>' + peliculas[n].description + '</p><h3>Trailer</h3><p>Puedes el trailer de esta pelicula en <a href="' + peliculas[n].trailer + '" target="_blank">Youtube</a><p>';
 
                     } else {
                         document.querySelector('section').innerHTML = '<h1>Algo salió mal. Pero Sam y Frodo encontrarán la manera de arreglarlo.</h1><h4>Por mientras, podrías ver el resto de las <a href="peliculas.html">películas</a></h4>';
